@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ceced2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background-color: #deddda;
+      width: 420px;
+      height: 420px;
+      border-radius: 25px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      padding: 25px;
+    }
+
+    .card img {
+      width: 175px;
+      height: 175px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 16px;
+    }
+
+    .card h2 {
+      font-size: 22px;
+      color: #03528f;
+    }
+
+    .card p.role {
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 25px;
+    }
+
+    .stats div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .stats span.number {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .stats span.label {
+      font-size: 15px;
+      color: #6c6b6b;
+    }
+
+    .btn {
+      background-color: #2563eb;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #1d4ed8;
+    }
+    .btn:active{
+      background-color: #0460a6;
+      transform: scale(0.97);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="D:\VSCode\WebDev Project 1\DSC_999600.JPG" alt="Profile picture">
+    <h2>Rohan Bhandari</h2>
+    <p class="role">Full Stack Web Developer</p>
+
+    <div class="stats">
+      <div>
+        <span class="number">2,500+</span>
+        <span class="label">Connections</span>
+      </div>
+      <div>
+        <span class="number">10</span>
+        <span class="label">Projects</span>
+      </div>
+      <div>
+        <span class="number">5</span>
+        <span class="label">Certificates</span>
+      </div>
+    </div>
+
+    <button class="btn">Follow</button>
+  </div>
+
+</body>
+</html>
